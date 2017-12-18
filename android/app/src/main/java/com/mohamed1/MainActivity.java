@@ -2,6 +2,8 @@ package com.mohamed1;
 
 import com.facebook.react.ReactActivity;
 import com.calendarevents.CalendarEventsPackage;
+
+
 public class MainActivity extends ReactActivity {
 
     /**
@@ -12,7 +14,8 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "Mohamed1";
     }
-    @Override
+
+     @Override
   public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
       CalendarEventsPackage.onRequestPermissionsResult(requestCode, permissions, grantResults);
       super.onRequestPermissionsResult(requestCode, permissions, grantResults);
